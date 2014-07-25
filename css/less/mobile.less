@@ -1,0 +1,88 @@
+header {
+	background-color:@black;
+	height:50px;
+	box-shadow: 3px 3px 5px 0 @grey;
+	nav {
+		.Gutters(94%,0,3%);
+		margin: auto;
+	}
+	h1{
+		line-height: 50px;
+		a, a:visited {
+			&:hover,
+			&:focus,
+			&:active {
+				border-bottom: none;
+			}
+			img {
+				padding:8px 0px;
+			}
+		}
+		span {
+			display:none;
+		}
+	}
+}
+
+#main {
+	float:left;
+	img {
+		border:2px solid @accent;
+	}
+	ul {
+		li {
+			display: block;
+			position:relative;
+			width:100%;
+			padding:1em 2em 0 1.5em;
+		}
+	}
+	.author {
+		border-bottom: .07em solid @accent;
+		padding: .5em .5em .5em 0;
+		font-family: "Times New Roman", serif;
+		color:@grey;
+		display: block;
+	}
+	.date {
+		color:@grey;
+		display: inline-block;
+		vertical-align: top;
+		background: url("http://placehold.it/16x16") no-repeat scroll 0 1.2em rgba(0, 0, 0, 0);
+	}
+	.tags {
+		display: inline-block;
+		vertical-align: top;
+		background: url("http://placehold.it/16x16") no-repeat scroll 0 1.2em rgba(0, 0, 0, 0);
+		a {
+			&:after {
+				content:', ';
+			}
+			&:last-child:after {
+				content:'';
+			}
+		}
+	}
+	.comments {
+		display: inline-block;
+		vertical-align: top;
+		background: url("http://placehold.it/16x16") no-repeat scroll 0 1.2em rgba(0, 0, 0, 0);
+	}
+	.lead {
+		padding-top: 1em;
+	}
+	aside {
+		h4 {
+			margin-bottom: 1em;
+		}
+		li {
+			margin-bottom: 1em;
+			list-style-type: none;
+		}
+	}
+}
+
+
+
+
+

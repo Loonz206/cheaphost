@@ -1,0 +1,210 @@
+body {margin:0; padding: 0; }
+img {max-width: 100%; }
+.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* HTML .clearfix { height: 1%; }
+.group { display: block; }
+
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  height: auto; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+
+
+/*Containers*/
+/*--------------------------------------------------------------------------------*/
+#wrapper {margin: 0 auto; .Gutters(100%,0,0);}
+#main {margin: 0 auto; .Gutters(94%, 0, 3%); max-width: 75em;}
+
+body {
+    font-size:100%;
+    .Font;
+    color:@bodyColor;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+    font-family: @headlineFont;
+}
+h1 {
+    font-size:2.25em; /* 36px / 16px */
+    line-height: 3em;
+}
+h2 {
+    font-size:1.875em; /* 30px / 16px */
+    line-height: 2.5625em;
+}
+h3 {
+    font-size:1.5em; /* 24px / 16px */
+    line-height: 2.0625em;
+}
+h4 {
+   font-size: 1.3125em; /* 21px / 16px */
+   line-height: 1.8125em; 
+}
+h5 {
+    font-size:1.125em; /* 18px / 16px */
+    line-height: 1.625em;
+}
+h6 {
+    font-size:1em; /* 16px / 16px */
+    line-height: 1.4375em;
+}
+p {.Font;
+    font-size: 1em; /* 16px / 16px */
+    line-height: 1.4375em;
+    max-width:45em;
+}
+a, a:visited { 
+    color:@primary;
+	text-decoration: none;
+	.Transition;
+}
+a:hover,
+a:focus,
+a:active {
+    color: darken(@primary, 30%);
+    border-bottom: 1px dotted @grey;
+ }
+blockquote {font-size: 1em; margin: 0; font-weight: 100; color:@bodyColor; position: relative; padding: 2em 0; /* 32px / 16px */}
+blockquote:before {
+    font-family: Georgia, serif;
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    color: #dadada;
+}
+blockquote p { } 
+ul {
+    list-style:disc;
+    margin:0;
+    padding:0;
+}
+ol {}
+ol ul {
+    list-style-type:circle;
+}
+ul ol {
+    list-style-type: square;
+}
+img {
+    height: auto;
+    max-width:100%;
+}
+
+strong {
+    font-weight:700;
+    letter-spacing: 0.0325em;
+}
+em,dfn {
+    font-weight:300italic;
+    letter-spacing: 0.0325em;
+}
+sup, sub {
+    line-height:0px;
+}
+abbr, acronym {
+    border-bottom:1px dotted @grey;
+}
+address {
+    margin: 0px 0px 1.5em;
+    font-style:italic;
+}
+del {
+    color:@grey;
+}
+pre {
+    white-space: pre;
+    border-left: .685em lighten(@grey, 20%) solid;
+    padding: 2%;
+}
+pre code {
+    margin-left: 1em;
+}
+pre, code, tt {
+    font-size:1em;
+    font-family:'andale mono', 'lucida console', monospace;
+    line-height:1.5em;
+}
+dl {
+    margin: 0px 0px 1.5em 0px; 
+}
+dl dt {
+    font-weight: 700;
+    letter-spacing: 0.0325em; 
+}
+dd  {
+    margin-left: 1.5em;
+}
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999; 
+}
+
+figure {
+    width:100%;
+}
+
+figcaption {
+    font-style:italic;
+    line-height: 1.5em;
+    margin:0.75em 0;
+    text-align: center;
+}
+
+/*----TABLES----*/
+
+table {
+    border: 1px solid @grey;
+    background: none repeat scroll 0 0 @white;
+    margin: 0 0 1.2em 0;
+    font-size: .875em;  
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 1px solid @grey;
+}
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
+.lead {
+    font-size: 1.125em;
+}
+
+
+
+/* Fix for FlexSlider */
+.flexslider .slides img {height: auto;}
+
+.lighter {font-weight:lighter;}
+.small {font-size: 70%;}
+.italic {font-style:italic;}
+.center {text-align: center;}
+.caps {text-transform:uppercase!important;}
+.under {text-decoration:underline;} 
+.bold {font-weight:bold;}
+.normal {font-weight:normal;}    
+.right_text {text-align:right;}
+.left_text {text-align:left;}
+
+/*styles to use when web fonts are loading*/
+.wf-loading NAV, .wf-loading H1, .wf-loading H2, .wf-loading H3, .wf-loading H4, .wf-loading H5, .wf-loading H6, .wf-loading P, .wf-loading A, .wf-loading BLOCKQUOTE, .wf-loading UL, .wf-loading LI { display: none; }
